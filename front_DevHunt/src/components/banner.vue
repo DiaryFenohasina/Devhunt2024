@@ -30,9 +30,9 @@
 
   }
   
-  @media screen and (min-width:769px) {
+  /* @media screen and (min-width:769px) {
     .landing{
       min-height: 820px;
     }
-  }
+  } */
 </style>
