@@ -122,7 +122,8 @@
         this.isDisable = true
         this.isValid.username=this.isValid.email=this.isValid.password=this.isValid.confirmPass=this.isValid.file = false
         this.user = {}
-      }
+      },
+      
     }
   }
 </script>
