@@ -2,7 +2,7 @@
    <div>
       <Banner/>
       <About/>
-      <Tools/>
+      <Offers/>
       <Clubs/>
    </div>
 </template>
@@ -10,7 +10,7 @@
 <script>
 import Banner from '@/components/banner.vue'
 import About from '@/components/about.vue'
-import Tools from '@/components/Tools.vue'
+import Offers from '@/components/Offers.vue'
 import Clubs from '@/components/Clubs.vue'
 
 
@@ -19,7 +19,7 @@ export default {
   components:{
     Banner,
     About,
-    Tools,
+    Offers,
     Clubs
   }
 };

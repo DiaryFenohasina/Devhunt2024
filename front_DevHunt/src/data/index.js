@@ -32,7 +32,7 @@ const serviceData = [
                 frameworks, plugins and templates online documentation website building.`
     },
     {
-      icon : 'ti-settings',
+      icon : 'ti-marker',
       image : banner,
       title: 'Theme Facility',
       text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
@@ -195,26 +195,40 @@ const navBar = [
     name : 'Link',
   },
 ]
+const Offers = [
+  {
+    icon: 'ti-user',
+    image : cta,
+    title : 'Discuster avec les autres',
+    text : `Most of the documentation site are looks identical. Thats why we `
+  },
+  {
+    icon: 'ti-bookmark',
+    image : cta,
+    title : 'Chercher des mentors',
+    text : `Most of the documentation site are looks identical. Thats why we take an `
+  },
+  {
+    icon: 'ti-package',
+    image : cta,
+    title : 'Devenir mentor',
+    text : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+    make something different and bring some new concept with minimal design. Meet Godocs `
+  },
+  {
+    icon: 'ti-comment',
+    image : cta,
+    title : 'Parler avec IA Chat',
+    text : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+    make something different and bring some new concept with minimal design. Meet Godocs `
+  },
+  {
+    icon: 'ti-cup',
+    image : cta,
+    title : "Trouver des clubs",
+    text : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+    frameworks, plugins and templates online documentation website building.`
+  },
+]
 
-/*
-
-
-<ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" >
-              <li class="nav-item">
-                <router-link to="/"><span class="nav-link pb-2" :class="getName == 'home' && 'nav-active'">Home</span></router-link>
-              </li>
-              <li class="nav-item">
-                <router-link to="/Services/0"><span class="nav-link" :class="getName == 'services' && 'nav-active'">Services</span></router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="#2">Link</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="#2">Link</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="#2">Link</router-link>
-              </li>
-            </ul>
-*/
-  export { navBar,Clubs, Etudes, Sports, Autres }
+  export { navBar,Clubs, Etudes, Sports, Autres, Offers }
