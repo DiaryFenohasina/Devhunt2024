@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-7  text-left">
-                <h1 class="mb-4">Documentation Theme By Themefisher Team</h1>
-                <p class="mb-5">Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At.</p>
+                <h1 class="mb-4">Bienvenue dans ENI guide</h1>
+                <p class="mb-5">Connectez-vous pour explorer un monde de fonctionnalités personnalisées et de services adaptés à vos besoins.</p>
                 
                 <form class="search-wrapper d-sm-flex" action="search.html">
                     <input id="search-by" name="s" type="email" class="form-control form-control-lg" placeholder="votre_adresse@gmail.com">

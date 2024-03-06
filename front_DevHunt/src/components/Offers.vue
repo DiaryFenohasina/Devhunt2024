@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-title text-center">
         <h2 class=" text-center ">Services offertes</h2>
-        <p class="text-center">dsljfhsdlsfjsdlkfj   </p>
+        <p class="text-center">Entrez dans un monde de solutions sur mesure, où nos services dépassent les attentes pour vous offrir l'excellence.</p>
       </div>
       <div class="row ">
         <div v-for="(acces,index) in Offers " :key="index" class="c-type col-lg-3 col-md-4 col-sm-6 mb-4">

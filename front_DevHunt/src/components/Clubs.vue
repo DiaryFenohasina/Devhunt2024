@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-title text-center">
         <h2 class=" text-center ">Association et Clubs</h2>
-        <p class="text-center">dsljfhsdlsfjsdlkfj   </p>
+        <p class="text-center">Rejoignez notre famille engagée au sein de l'ENI pour partager des passions communes et créer des liens durables</p>
       </div>
       <div class="d-flex justify-content-center mb-2 ">
         <ul class="  px-5 d-flex">
