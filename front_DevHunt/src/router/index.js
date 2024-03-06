@@ -35,6 +35,7 @@ const routes = [
     name: 'aceuille',
     component: Acceuille
   },  
+  
   {
     path: '/Sign',
     name: 'Sign',
