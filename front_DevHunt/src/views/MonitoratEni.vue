@@ -7,7 +7,7 @@
             </div>
             <h2 class="section-title mt-4">Les Mentors</h2>
             <div class="row">
-                <div class="col-lg-4 col-md-5 col-sm-7 mb-5">
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
                     <div class="card match-height" style="height: 321.4px;">
                       <div class="card-body">
                         <div class="d-flex gap-5">
@@ -24,15 +24,15 @@
                                 <p class="card-text mt-1">Dev ReactJs</p>
                                 <p class="card-text mt-1">Dev ReactJs</p>         
                             </div>
-                            <div class="contact mt-4">
-                                <button type="button" class="contact btn btn-primary  m-auto"><i class="card-icon mb-4 ti-comments" ></i></button>
+                            <div class="contact mt-5 m-auto">
+                                <i class="card-icon mb-4 ti-comments" ></i>
                             </div>
                         </div>   
                         <slot/>
                       </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-7 mb-5">
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
                     <div class="card match-height" style="height: 321.4px;">
                       <div class="card-body">
                         <div class="d-flex gap-5">
@@ -49,8 +49,8 @@
                                 <p class="card-text mt-1">Dev ReactJs</p>
                                 <p class="card-text mt-1">Dev ReactJs</p>         
                             </div>
-                            <div class="contact mt-4">
-                                <button type="button" class="contact btn btn-primary  m-auto"><i class="card-icon mb-4 ti-comments" ></i></button>
+                            <div class="contact mt-5 m-auto">
+                                <i class="card-icon mb-4 ti-comments" ></i>
                             </div>
                         </div>   
                         <slot/>

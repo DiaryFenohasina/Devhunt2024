@@ -8,8 +8,11 @@ import SignIn from '@/components/SignIn'
 import SignUp from '@/components/SignUp'
 import Chat from '@/views/Chat'
 import MonitoratEni from '@/views/MonitoratEni.vue'
- //ajouter tojo
-import Acceuille from '@/views/Acceuille'
+import Acceuille from '@/views/Acceuille.vue'
+import TrouverMontor from '@/views/TrouverMontor.vue'
+import MappingView from '@/views/MappingView.vue'
+import Discussion from '@/views/Discussion'
+
 
 Vue.use(VueRouter)
 
@@ -35,6 +38,7 @@ const routes = [
     name: 'aceuille',
     component: Acceuille
   },  
+
   {
     path: '/Sign',
     name: 'Sign',
@@ -56,7 +60,22 @@ const routes = [
     path: '/monitorat',
     name: 'guide',
     component: MonitoratEni
-  }
+  },
+  {
+    path: '/discussion',
+    name: 'chat',
+    component: Discussion
+  },
+  {
+    path: '/trouver',
+    name: 'guide',
+    component: TrouverMontor
+  },
+  {
+    path: '/mapp',
+    name: 'guide',
+    component: MappingView
+  },
  
 ]
 
