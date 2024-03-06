@@ -8,7 +8,8 @@ import SignIn from '@/components/SignIn'
 import SignUp from '@/components/SignUp'
 import Chat from '@/views/Chat'
 import MonitoratEni from '@/views/MonitoratEni.vue'
-import Acceuille from '@/views/Acceuille'
+import Acceuille from '@/views/Acceuille.vue'
+import TrouverMontor from '@/views/TrouverMontor.vue'
 import Discussion from '@/views/Discussion'
 
 
@@ -36,7 +37,7 @@ const routes = [
     name: 'aceuille',
     component: Acceuille
   },  
-  
+
   {
     path: '/Sign',
     name: 'Sign',
@@ -63,7 +64,12 @@ const routes = [
     path: '/discussion',
     name: 'chat',
     component: Discussion
-  }
+  },
+  {
+    path: '/trouver',
+    name: 'guide',
+    component: TrouverMontor
+  },
  
 ]
 
