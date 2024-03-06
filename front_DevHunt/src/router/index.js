@@ -8,6 +8,8 @@ import SignIn from '@/components/SignIn'
 import SignUp from '@/components/SignUp'
 import Chat from '@/views/Chat'
 import MonitoratEni from '@/views/MonitoratEni.vue'
+ //ajouter tojo
+import Acceuille from '@/views/Acceuille'
 
 Vue.use(VueRouter)
 
@@ -26,6 +28,12 @@ const routes = [
     path: '/Services/:id',
     name: 'services',
     component: Services
+  },  
+  //ajouter tojo
+  {
+    path: '/Aceuille',
+    name: 'aceuille',
+    component: Acceuille
   },  
   {
     path: '/Sign',
