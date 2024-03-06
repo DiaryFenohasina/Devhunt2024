@@ -3,7 +3,7 @@
     <div class="container shadow section-sm rounded">
       <div class="row">
         <div class="col-lg-3">
-          <ul class="sidenav" v-for="(data, id) in serviceData" :key="id">
+          <ul class="sidenav" v-for="(data, id) in Clubs" :key="id">
             <li class="sidelist c-type" @click="changeIndex(id)">
               <span :class="id == index && 'isActive'">{{ data.title }}</span>
             </li>
@@ -12,17 +12,17 @@
         <div class="col-lg-8">
           <div class="px-lg-5 px-4">
             <h2 class="mb-4 font-weight-medium">
-              {{ serviceData[index].title }}
+              {{ Clubs[index].title }}
             </h2>
             <div class="content">
               <p>
                 <img
-                  :src="serviceData[index].image"
+                  :src="Clubs[index].image"
                   width="500px"
                   alt="image"
                 />
               </p>
-              <p>{{ serviceData[index].about }}</p>
+              <p>{{ Clubs[index].about }}</p>
             </div>
             <!-- navigation -->
             <!-- <nav class="pagination">
@@ -37,12 +37,12 @@
   </section>
 </template>
 <script>
-import { serviceData } from "@/data";
+import { Clubs } from "@/data";
 // this.$route.params.id
 export default {
   data() {
     return {
-      serviceData,
+      Clubs,
       index: this.$route.params.id,
     };
   },
