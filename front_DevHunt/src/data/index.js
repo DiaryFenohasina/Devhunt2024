@@ -252,5 +252,8 @@ const Mentorat = {
       frameworks, plugins and templates online documentation website building.`
     },
   ]
+  const sary = [
+    banner, basic, cta, logo
+  ]
 
-export { serviceData, Mentorat, navBar, Clubs, Etudes, Sports, Autres, Offers }
+export { serviceData, Mentorat, navBar, Clubs, Etudes, Sports, Autres, Offers,sary }
