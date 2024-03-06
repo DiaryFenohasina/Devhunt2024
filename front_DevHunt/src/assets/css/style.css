@@ -14,9 +14,9 @@ VERSION:	Versoin Number
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
-/*  typography */
+/*  typography 00d362 224a4f*/
 :root{
-    --baseColor : #ff0000;
+    --baseColor : #00d362;
     --activeFocusColor : #cc0000;
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap");

@@ -19,7 +19,7 @@
                 </form>
             </div>
             <div class="col-lg-4 d-lg-block d-none">
-                <img src="../assets/images/logo.png" alt="illustration" class="img-fluid">
+                <img src="../assets/images/eni.png" alt="illustration" class="img-fluid rounded" style="max-width= 90%">
             </div>
         </div>
     </div>
@@ -30,3 +30,9 @@
 <script>
 
 </script>
+<style scoped>
+  .rounded{
+    max-width: 90%;
+    
+  }
+</style>
