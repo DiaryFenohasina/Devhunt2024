@@ -7,6 +7,7 @@ import Authentication from '@/layout/Authentication.vue'
 import SignIn from '@/components/SignIn'
 import SignUp from '@/components/SignUp'
 import Chat from '@/views/Chat'
+import MonitoratEni from '@/views/MonitoratEni.vue'
 
 Vue.use(VueRouter)
 
@@ -43,6 +44,11 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/monitorat',
+    name: 'guide',
+    component: MonitoratEni
+  }
  
 ]
 
