@@ -57,14 +57,26 @@
             
         </div>
     </div>
+    <transition name="animate">
+         <div class="container p-3" v-if="show">
+          <div class="col-lg-4 d-lg-block d-none">
+                <img src="../assets/images/eni.png" alt="illustration" class="img-fluid rounded" style="max-width: 90%">
+            </div>
+        </div>
+    </transition>
+    <button @click="!show">rrerer</button>
+   
   </section>
 </template>
 <script>
 export default {
     name:"Acceuille",
-    
+    data(){
+        return {
+            show: true
+        }
+    }
 }
 </script>
 <style scoped>
-
 </style>
