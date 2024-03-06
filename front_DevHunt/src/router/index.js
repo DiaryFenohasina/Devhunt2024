@@ -11,6 +11,7 @@ import MonitoratEni from '@/views/MonitoratEni.vue'
  //ajouter tojo
 import Acceuille from '@/views/Acceuille.vue'
 import TrouverMontor from '@/views/TrouverMontor.vue'
+import MappingView from '@/views/MappingView.vue'
 
 Vue.use(VueRouter)
 
@@ -63,6 +64,11 @@ const routes = [
     path: '/trouver',
     name: 'guide',
     component: TrouverMontor
+  },
+  {
+    path: '/mapp',
+    name: 'guide',
+    component: MappingView
   },
  
 ]
