@@ -12,6 +12,7 @@ import Acceuille from '@/views/Acceuille.vue'
 import TrouverMontor from '@/views/TrouverMontor.vue'
 import MappingView from '@/views/MappingView.vue'
 import Discussion from '@/views/Discussion'
+import DevenirMentor from '@/views/DevenirMentor.vue'
 
 
 Vue.use(VueRouter)
@@ -68,13 +69,18 @@ const routes = [
   },
   {
     path: '/trouver',
-    name: 'guide',
+    name: 'trouver',
     component: TrouverMontor
   },
   {
     path: '/mapp',
-    name: 'guide',
+    name: 'mapp',
     component: MappingView
+  },
+  {
+    path: '/devenir_mentor',
+    name: 'devenir_mentor',
+    component: DevenirMentor
   },
  
 ]
