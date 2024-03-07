@@ -14,22 +14,21 @@
             <h2 class="mb-4 font-weight-medium">
               {{ Clubs[index].title }}
             </h2>
-            <div class="content">
+             <div class="content">
               <div class="row">
                
-                  <div class="col-lg-4 d-lg-block d-none">
-                    <div class="card">
-                      <div class="card__inner" @click="toggle1" ref="card_inner">
+                 
+                    
+                      <div class="card__inner "  v-for="item in list" :key="item"  @click="toggle1(item)" ref="inner">
                         <div class="card__face card__face--front" >
-                          <div style="position:relative">
-                               <img
+                          <div class="tojo">
+                            <img
                   :src="Clubs[index].image"
                   width="500px"
                   alt="image"
                   
                 />
-                <div style="position:absolute; top:50%; left:50%; transform: translate(-50%,-50%)"> <h2>rgrgregregerger</h2></div>
-               
+                <div class="fita"><p>zryreyeqrquuer</p></div>
                           </div>
                          
                         
@@ -47,9 +46,8 @@
                           </div>
                         </div>
                       </div>
-                  </div>
-                  </div>
-
+                  
+                
               </div>
               <!--<p>
                 <img
@@ -80,14 +78,16 @@ export default {
     return {
       Clubs,
       index: this.$route.params.id,
+      list: [1,2,3,4,5],
     };
   },
   methods: {
     changeIndex(ind) {
       this.index = ind;
     },
-    toggle1(){
-      this.$refs.card_inner.classList.toggle('is-flipped')
+    toggle1(id){
+      this.$refs.inner[id - 1].classList.toggle('is_flipped')
+      
     }
   },
 };
@@ -120,33 +120,29 @@ span:hover {
   background: var(--baseColor);
 }
 /*rsytududµ*/
-:root {
-  --primary: #00d362;
-  --secondary:#ffff;
-  --dark: #212121;
-  --light: #F3F3F3;
+
+.tojo {
+position:relative
 }
-
-
-.card {
-  font-family: montserrat, sans-serif;
-  margin: 100px auto 0;
-  width: 300px;
-  height: 500px;
-  perspective: 1000px;
-  
+.fita {
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%)
 }
 
 .card__inner {
-  width: 100%;
-  height: 100%;
+  font-family: montserrat, sans-serif;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
   transition: transform 1s;
   transform-style: preserve-3d;
-  cursor: pointer;
+ margin-left:11%;
+ margin-top:2%;
+ margin-bottom: 2%;
   position: relative;
+  
 }
 
-.card__inner.is-flipped {
+.card__inner.is_flipped {
   transform: rotateY(180deg);
 }
 
@@ -164,7 +160,7 @@ span:hover {
 }
 
 .card__face--front {
-  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background-image: linear-gradient(to bottom right,  #00d362, #ffff);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,7 +172,7 @@ span:hover {
 }
 
 .card__face--back {
-  background-color: var(--light);
+  background-color: #F3F3F3;
   transform: rotateY(180deg);
  
 }
@@ -199,7 +195,7 @@ span:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  background-image: linear-gradient(to bottom left,  #00d362 10%, #ffff 115%);
   z-index: -1;
   border-radius: 0px 0px 50% 0px;
 }
@@ -228,14 +224,14 @@ span:hover {
 }
 
 .card__body h3 {
-  color: var(--dark);
+  color: #212121;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .card__body p {
-  color: var(--dark);
+  color: #212121;
   font-size: 18px;
   line-height: 1.4;
 }
