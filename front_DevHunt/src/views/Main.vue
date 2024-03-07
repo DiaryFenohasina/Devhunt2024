@@ -1,19 +1,23 @@
 <template>
    <div>
       <Banner/>
-      <Services/>
+      <About/>
+      <Clubs/>
    </div>
 </template>
 
 <script>
 import Banner from '@/components/banner.vue'
-import Services from '@/components/Services.vue'
+import About from '@/components/about.vue'
+import Clubs from '@/components/Clubs.vue'
+
 
 export default {
   name: 'SampleComponent',
   components:{
     Banner,
-    Services
+    About,
+    Clubs
   }
 };
 </script>

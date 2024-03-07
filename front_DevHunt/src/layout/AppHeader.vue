@@ -35,8 +35,8 @@
             <router-link v-if="getName === 'SignIn'" to="/Sign/Up">
               <span class="btn btn-outline-primary mx-lg-4 mb-5 mb-lg-0">Sign Up</span>
             </router-link>
-            <router-link v-else to="/Sign/In">
-              <span class="btn btn-outline-primary mx-lg-4 mb-5 mb-lg-0">Sign In</span>
+            <router-link v-else to="/Sign/Up">
+              <span class="btn btn-outline-primary mx-lg-4 mb-5 mb-lg-0">S'Inscrire</span>
             </router-link>
             <!-- <button class="btn btn-primary" type="submit">SignIn</button> -->
           </div>

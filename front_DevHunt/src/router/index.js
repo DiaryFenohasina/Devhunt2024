@@ -7,6 +7,7 @@ import Authentication from '@/layout/Authentication.vue'
 import SignIn from '@/components/SignIn'
 import SignUp from '@/components/SignUp'
 import Chat from '@/views/Chat'
+import Forum from '@/views/Forum'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,12 @@ const routes = [
     name: 'chat',
     component: Chat
   },
+  {
+    path: '/Forum',
+    name: 'forum',
+    component: Forum
+  },
+
   {
     path: '/Services/:id',
     name: 'services',

@@ -1,7 +1,10 @@
 <template>
   <section class="section pb-0">
     <div class="container">
-      <h2 class="section-title">Our Offered Services</h2>
+      <div class="section-title text-center">
+        <h2 class=" text-center ">Clubs</h2>
+        <p class="text-center">dsljfhsdlsfjsdlkfj   </p>
+      </div>
       <div class="row">
         
             <Card class="c-type" v-for="(data,index) in serviceData " :key="index">
