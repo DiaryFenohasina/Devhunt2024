@@ -1,12 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-lg-3">
-      <div class="avatar-container d-smart-none bg-light">
-        <label for="formFileLg">
-          <img alt="Avatar" class="avatar-image" />
-        </label>
-        <div class="avatar-middle">Photo</div>
-      </div>
+    <div class="col-lg-2">
     </div>
     <div class="col-lg-8">
       <div class="px-lg-5 px-4">
@@ -41,15 +35,12 @@
                 @input="inputHandler"
                 @keyup="inputHandler"
               />
-              <label for="password">Password</label>
+              <label for="password">Mot de passe </label>
             </div>
             <div class="d-flex align-items-center justify-content-end">
-              <button
-                type="submit"
-                class="btn btn-primary"
-                :disabled="isDisable"
-              >
-                Login
+              <router-link to="/Sign/In"><span class="mx-2 mx-sm-3 has-acc">S'inscrire ?</span></router-link>
+              <button type="submit" class="btn btn-primary" :disabled="isDisable">
+                Connexion
               </button>
             </div>
           </form>
@@ -74,14 +65,12 @@ export default {
   },
   methods: {
     login() {
-      backServer
-        .post("/login", this.user)
+      backServer.post("/login", this.user)
         .then((res) => {
           if (res.data.message === "connected") {
             localStorage.setItem("token", res.data.access_token);
             localStorage.setItem("id", res.data.user_ID);
             localStorage.setItem("username", res.data.username);
-
             this.$router.push(`/Chat`);
           }
         })

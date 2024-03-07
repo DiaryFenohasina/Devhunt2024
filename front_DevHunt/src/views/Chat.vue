@@ -111,7 +111,9 @@ export default {
       
     },
     socketConnect(){
+      
       // socket : io.connect("http://192.168.43.19:4001")
+
       this.socket = io("http://127.0.0.1:5000")
       this.socket.emit('status',{username: this.username, UserId:this.id})
       this.socket.on('connectedUser', (user) => {
