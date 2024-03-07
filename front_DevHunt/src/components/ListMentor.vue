@@ -16,7 +16,9 @@
                     <button type="button" class="contact btn btn-primary  m-auto">Trouver un mentor</button>
                 </div>
             </div>
-            <!-- card 2 -->
+        </div>
+        <div class="">
+                        <!-- card 2 -->
             <div class="cadran mt-5">
                 <div class="title">
                     <h3 class="card-title h3 ">{{Mentorat.cadran2.title}}</h3>
@@ -47,11 +49,40 @@
 </template>
 
 <script>
+import { backServer } from '@/config/axiosConfig';
 import {Mentorat} from '@/data'
  export default {
     data(){
         return {
-            Mentorat
+            Mentorat,
+            heart: '',
+            user : {}
+        }
+    },
+    mounted (){
+        this.heartcolors()
+    },
+    methods:{
+        async heartcolors(){
+            try {
+                const response = await backServer.post('');
+                if(response.data === true)
+                    this.heart = 'bi bi-heart'
+                else 
+                    this.heart = 'bi bi-heart-fill'
+
+            } catch (error) {
+                console.log(error)   
+            }
+        },
+        async getMentor(){
+            try {
+                const response = await backServer.get('')
+                this.user = [...response.data]
+                console.log('succes')
+            } catch (error) {
+                console.log(error)
+            }
         }
     }
  }
