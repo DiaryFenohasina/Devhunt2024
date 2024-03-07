@@ -10,7 +10,10 @@ import Chat from '@/views/Chat'
 import MonitoratEni from '@/views/MonitoratEni.vue'
 import Acceuille from '@/views/Acceuille.vue'
 import TrouverMontor from '@/views/TrouverMontor.vue'
+import MappingView from '@/views/MappingView.vue'
 import Discussion from '@/views/Discussion'
+import DevenirMentor from '@/views/DevenirMentor.vue'
+import Forum from '@/views/Forum.vue'
 
 
 Vue.use(VueRouter)
@@ -26,6 +29,12 @@ const routes = [
     name: 'chat',
     component: Chat
   },
+  {
+    path: '/Forum',
+    name: 'forum',
+    component: Forum
+  },
+
   {
     path: '/Services/:id',
     name: 'services',
@@ -62,13 +71,23 @@ const routes = [
   },
   {
     path: '/discussion',
-    name: 'chat',
+    name: 'discussion',
     component: Discussion
   },
   {
     path: '/trouver',
-    name: 'guide',
+    name: 'trouver',
     component: TrouverMontor
+  },
+  {
+    path: '/mapp',
+    name: 'mapp',
+    component: MappingView
+  },
+  {
+    path: '/devenir_mentor',
+    name: 'devenir_mentor',
+    component: DevenirMentor
   },
  
 ]

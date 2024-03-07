@@ -107,7 +107,8 @@
           sign: this.$route.path,
           errorMsg:'',
           parcours:'',
-          niveau:''
+          niveau:'',
+
       }
     },
     methods: {
@@ -147,13 +148,19 @@
         }
         
       },
-      fileHandler(e){
+      async fileHandler(e){
         let files = e.target.files || e.dataTransfer.files
         if(!files.length) return;
         this.user['image'] = files[0]
         this.createImg(files[0])
-                  
-
+        try {
+          const response = await backServer.post('/api/updloads', this.user.image)
+          this.user['image'] = response.image
+          console.log(response.image)   
+        } catch (error) {
+          console.log(error)
+        }
+        console.log (this.user['image'])
       },
       createImg(file){
         let reader = new FileReader();
@@ -162,20 +169,6 @@
         }
         reader.readAsDataURL(file)
       },
-      // register(){
-      //   backServer.post('/register',this.user)
-      //     .then(res => {
-      //       if(res.data.message === 'success')
-      //       {
-      //         this.$router.push({path: '/Sign/In', query: {email: res.data.email}}) 
-      //       }
-      //       console.log('tafiditra')
-      //     }).catch((err) => {
-      //         this.errorMsg = err.response.data.message
-      //         this.isValid.email = false
-      //         setTimeout(this.clearForm,3000)
-      //     })
-      // },
       clearForm(){
         this.errorMsg =''
         this.isDisable = true
@@ -184,17 +177,18 @@
       },
 
       async createUser(){
-        const formData = new FormData();
-        formData.append('name', this.user.name)
-        formData.append('first_name', this.user.first_name)
-        formData.append('niveau', this.user.niveau)
-        formData.append('parcours', this.user.parcours)
-        formData.append('email', this.user.email)
-        formData.append('password', this.user.password)
-        formData.append('confirmPassword', this.user.confirmPassword)
+        // const formData = new FormData();
+        // formData.append('name', this.user.name)
+        // formData.append('firstname', this.user.first_name)
+        // formData.append('niveau', this.user.niveau)
+        // formData.append('parcours', this.user.parcours)
+        // formData.append('email', this.user.email)
+        // formData.append('contact', this.user.contact)
+        // formData.append('password', this.user.password)
+        // formData.append('confirmPassword', this.user.confirmPassword)
 
         try {
-          const response = await backServer.post('insert_user', this.formData)
+          const response = await backServer.post('/api/user/register', this.user)
           console.log('Succes')
         } catch (error) {
           console.log(error)

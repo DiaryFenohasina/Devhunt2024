@@ -69,7 +69,7 @@ const Mentorat = {
       icon : 'ti-package',
       image : cta,
       title: 'AAENI',
-      text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+      text : 'Bienvenue à l\'Assemblée des Élèves, l\'espace dynamique où les idées prennent vie, les projets naissent, et la communauté éducative s\'épanouit. ',
       about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
                 make something different and bring some new concept with minimal design. Meet Godocs ,
                 a documentation and knowledge based website template. It can be used for software, API, 
@@ -79,7 +79,7 @@ const Mentorat = {
       icon : 'ti-panel',
       image : basic,
       title: 'Etudes',
-      text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+      text : 'Découvrez le Club d\'Études, un espace dynamique où la passion de l\'apprentissage s\'épanouit.',
       about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
                 make something different and bring some new concept with minimal design. Meet Godocs ,
                 a documentation and knowledge based website template. It can be used for software, API, 
@@ -89,7 +89,7 @@ const Mentorat = {
       icon : 'ti-credit-card',
       image : logo,
       title: 'Sport',
-      text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+      text : 'Explorez notre club sportif, un lieu où la camaraderie et la compétition se marient pour créer des moments mémorables sur et en dehors du terrain.',
       about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
                 make something different and bring some new concept with minimal design. Meet Godocs ,
                 a documentation and knowledge based website template. It can be used for software, API, 
@@ -99,7 +99,7 @@ const Mentorat = {
       icon : 'ti-package',
       image : cta,
       title: 'Autres',
-      text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+      text : 'Explorez les horizons illimités de notre club, où chaque membre apporte sa touche unique. Rejoignez-nous pour une expérience enrichissante et pleine de découvertes.',
       about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
                 make something different and bring some new concept with minimal design. Meet Godocs ,
                 a documentation and knowledge based website template. It can be used for software, API, 
@@ -222,35 +222,35 @@ const Mentorat = {
       icon: 'ti-user',
       image : cta,
       title : 'Discuster avec les autres',
-      text : `Most of the documentation site are looks identical. Thats why we `
+      text : `La magie se produit lorsque nous partageons nos pensées. Prêt à contribuer à cette discussion ?`
     },
     {
       icon: 'ti-bookmark',
       image : cta,
       title : 'Chercher des mentors',
-      text : `Most of the documentation site are looks identical. Thats why we take an `
+      text : `À la recherche d'un mentor qui puisse guider et inspirer votre parcours ? Bienvenue dans notre programme de mentorat!`
     },
     {
       icon: 'ti-package',
       image : cta,
       title : 'Devenir mentor',
-      text : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-      make something different and bring some new concept with minimal design. Meet Godocs `
+      text : `Prêt à partager vos compétences et votre expérience pour guider la prochaine génération ? Devenez mentor aujourd'hui !`
     },
     {
       icon: 'ti-comment',
       image : cta,
-      title : 'Parler avec IA Chat',
-      text : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-      make something different and bring some new concept with minimal design. Meet Godocs `
+      title : 'Interagir avec IA',
+      text : `Bienvenue ! Je suis ici pour répondre à vos questions et vous assister. `
     },
     {
       icon: 'ti-cup',
       image : cta,
       title : "Trouver des clubs",
-      text : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-      frameworks, plugins and templates online documentation website building.`
+      text : `À la recherche d'une communauté qui partage vos passions ? Explorez nos clubs et découvrez l'endroit parfait pour vous épanouir.`
     },
   ]
+  const sary = [
+    banner, basic, cta, logo
+  ]
 
-export { serviceData, Mentorat, navBar, Clubs, Etudes, Sports, Autres, Offers }
+export { serviceData, Mentorat, navBar, Clubs, Etudes, Sports, Autres, Offers,sary }
