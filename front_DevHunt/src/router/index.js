@@ -64,7 +64,7 @@ const routes = [
   },
   {
     path: '/discussion',
-    name: 'chat',
+    name: 'discussion',
     component: Discussion
   },
   {
