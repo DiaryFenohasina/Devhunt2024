@@ -1,7 +1,6 @@
 <template>
   <div>
     <BannerForum />
-
     <section class="pt-5">
       <div class="container shadow section-sm rounded min-Height">
         <div class="row">

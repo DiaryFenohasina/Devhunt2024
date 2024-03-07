@@ -11,7 +11,7 @@
           />
         </div>
         <div class="col-lg-7 text-left">
-          <h1 class="mb-4">Partage d'experience de vie à l'aide d'un Forum.</h1>
+          <h1 class="mb-4">Partage d'expérience de vie à l'aide d'un Forum.</h1>
           <p class="mb-5">
             Découvrez un espace d'échange vibrant où vos idées prennent vie et
             où les élèves se rassemble pour partager passions, connaissances et
