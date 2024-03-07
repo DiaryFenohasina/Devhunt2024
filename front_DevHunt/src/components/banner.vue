@@ -16,14 +16,6 @@
                 <img src="../assets/images/eni.png" alt="illustration" class="img-fluid rounded" style="max-width: 90%">
             </div>
         </div>
-        <div class="col-lg-4 d-lg-block d-none">
-          <img
-            src="../assets/images/eni.png"
-            alt="illustration"
-            class="img-fluid rounded"
-            style="max-width: 90%"
-          />
-        </div>
       </div>
   </section>
 </template>
