@@ -62,11 +62,7 @@ export default {
   },
   methods: {
     login() {
-<<<<<<< HEAD
-      backServer.post("/login", this.user)
-=======
       backServer.post("/api/user/login", this.user)
->>>>>>> bc540779e8a66268117f39f7a430c697de546567
         .then((res) => {
           if (res.data.message === "connected") {
             localStorage.setItem("token", res.data.access_token);
