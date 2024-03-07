@@ -13,6 +13,7 @@ import TrouverMontor from '@/views/TrouverMontor.vue'
 import MappingView from '@/views/MappingView.vue'
 import Discussion from '@/views/Discussion'
 import DevenirMentor from '@/views/DevenirMentor.vue'
+import Forum from '@/views/Forum.vue'
 
 
 Vue.use(VueRouter)
