@@ -61,13 +61,9 @@
               >
             </router-link>
             <router-link v-else to="/Sign/Up">
-<<<<<<< HEAD
-              <span class="btn btn-outline-primary mx-lg-4 mb-5 mb-lg-0">S'Inscrire</span>
-=======
               <span class="btn btn-outline-primary mx-lg-4 mb-5 mb-lg-0"
                 >S'Inscrire</span
               >
->>>>>>> 704c5947495c45d1411cb0bbc7643940a15f1849
             </router-link>
             <!-- <button class="btn btn-primary" type="submit">SignIn</button> -->
           </div>

@@ -107,81 +107,81 @@ const Mentorat = {
     },
     
   ]
-  const Etudes = [
-    {
-      icon : 'ti-panel',
-      image : basic,
-      title: 'C2E',
-      text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
-      about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-                make something different and bring some new concept with minimal design. Meet Godocs ,
-                a documentation and knowledge based website template. It can be used for software, API, 
-                frameworks, plugins and templates online documentation website building.`
-    },
-    {
-      icon : 'ti-credit-card',
-      image : logo,
-      title: 'C3LF',
-      text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
-      about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-                make something different and bring some new concept with minimal design. Meet Godocs ,
-                a documentation and knowledge based website template. It can be used for software, API, 
-                frameworks, plugins and templates online documentation website building.`
-    },
-    {
-      icon : 'ti-package',
-      image : cta,
-      title: 'Code Cloud',
-      text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
-      about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-                make something different and bring some new concept with minimal design. Meet Godocs ,
-                a documentation and knowledge based website template. It can be used for software, API, 
-                frameworks, plugins and templates online documentation website building.`
-    },
-  ]
-const Clubs = [
-  {
-    icon : 'ti-package',
-    image : cta,
-    title: 'AAENI',
-    text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
-    about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-              make something different and bring some new concept with minimal design. Meet Godocs ,
-              a documentation and knowledge based website template. It can be used for software, API, 
-              frameworks, plugins and templates online documentation website building.`
-  },
-  {
-    icon : 'ti-panel',
-    image : basic,
-    title: 'Etudes',
-    text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
-    about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-              make something different and bring some new concept with minimal design. Meet Godocs ,
-              a documentation and knowledge based website template. It can be used for software, API, 
-              frameworks, plugins and templates online documentation website building.`
-  },
-  {
-    icon : 'ti-credit-card',
-    image : logo,
-    title: 'Sport',
-    text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
-    about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-              make something different and bring some new concept with minimal design. Meet Godocs ,
-              a documentation and knowledge based website template. It can be used for software, API, 
-              frameworks, plugins and templates online documentation website building.`
-  },
-  {
-    icon : 'ti-package',
-    image : cta,
-    title: 'Autres',
-    text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
-    about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
-              make something different and bring some new concept with minimal design. Meet Godocs ,
-              a documentation and knowledge based website template. It can be used for software, API, 
-              frameworks, plugins and templates online documentation website building.`
-  },
+  // const Etudes = [
+    // {
+    //   icon : 'ti-panel',
+    //   image : basic,
+    //   title: 'C2E',
+    //   text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+    //   about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+    //             make something different and bring some new concept with minimal design. Meet Godocs ,
+    //             a documentation and knowledge based website template. It can be used for software, API, 
+    //             frameworks, plugins and templates online documentation website building.`
+    // },
+    // {
+    //   icon : 'ti-credit-card',
+    //   image : logo,
+    //   title: 'C3LF',
+    //   text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+    //   about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+    //             make something different and bring some new concept with minimal design. Meet Godocs ,
+    //             a documentation and knowledge based website template. It can be used for software, API, 
+    //             frameworks, plugins and templates online documentation website building.`
+    // },
+    // {
+    //   icon : 'ti-package',
+    //   image : cta,
+    //   title: 'Code Cloud',
+    //   text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+    //   about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+    //             make something different and bring some new concept with minimal design. Meet Godocs ,
+    //             a documentation and knowledge based website template. It can be used for software, API, 
+    //             frameworks, plugins and templates online documentation website building.`
+    // },
+  // ]
+// const Clubs = [
+  // {
+  //   icon : 'ti-package',
+  //   image : cta,
+  //   title: 'AAENI',
+  //   text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+  //   about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+  //             make something different and bring some new concept with minimal design. Meet Godocs ,
+  //             a documentation and knowledge based website template. It can be used for software, API, 
+  //             frameworks, plugins and templates online documentation website building.`
+  // },
+  // {
+  //   icon : 'ti-panel',
+  //   image : basic,
+  //   title: 'Etudes',
+  //   text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+  //   about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+  //             make something different and bring some new concept with minimal design. Meet Godocs ,
+  //             a documentation and knowledge based website template. It can be used for software, API, 
+  //             frameworks, plugins and templates online documentation website building.`
+  // },
+  // {
+  //   icon : 'ti-credit-card',
+  //   image : logo,
+  //   title: 'Sport',
+  //   text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+  //   about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+  //             make something different and bring some new concept with minimal design. Meet Godocs ,
+  //             a documentation and knowledge based website template. It can be used for software, API, 
+  //             frameworks, plugins and templates online documentation website building.`
+  // },
+  // {
+  //   icon : 'ti-package',
+  //   image : cta,
+  //   title: 'Autres',
+  //   text : 'Cras at dolor eget urna varius faucibus tempus in elit dolor sit amet.',
+  //   about : `Most of the documentation site are looks identical. Thats why we take an initiative to 
+  //             make something different and bring some new concept with minimal design. Meet Godocs ,
+  //             a documentation and knowledge based website template. It can be used for software, API, 
+  //             frameworks, plugins and templates online documentation website building.`
+  // },
   
-]
+// ]
 const Etudes = [
   {
     icon : 'ti-panel',
