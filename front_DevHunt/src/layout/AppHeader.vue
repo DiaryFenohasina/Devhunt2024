@@ -27,32 +27,32 @@
             id="navbarScroll"
           >
             <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
-              <li class="nav-item">
+              <li class="nav-item" @click="setNom('home')">
                 <router-link to="/"
                   ><span
                     class="nav-link pb-2"
-                    :class="getName == 'home' && 'nav-active'"
+                    :class="nom == 'home' && 'nav-active'"
                     >Guide</span
                   ></router-link
                 >
               </li>
-              <li class="nav-item">
-                <router-link to="/Services/0"
+              <li class="nav-item" @click="setNom('services')">
+                <router-link to="#services"
                   ><span
                     class="nav-link"
-                    :class="getName == 'services' && 'nav-active'"
+                    :class="nom == 'services' && 'nav-active'"
                     >Services</span
                   ></router-link
                 >
               </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="#2">Link</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="#2">Link</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link" to="#2">Link</router-link>
+              <li class="nav-item" @click="setNom('clubs')">
+                <router-link to="#clubs"
+                  ><p
+                    class="nav-link"
+                    :class="nom == 'clubs' && 'nav-active'"
+                    >Clubs</p
+                  ></router-link
+                >
               </li>
             </ul>
             <router-link v-if="getName === 'SignIn'" to="/Sign/Up">
@@ -76,14 +76,22 @@
 export default {
   data() {
     return {
+      nom : 'home' ,
+      path : '',
       isScrolled: false,
       isNavbarOpen: false,
     };
   },
   computed: {
     getName: function () {
+      
       return this.$route.name;
     },
+  },
+  watch:{
+    path : function(newVal){
+      console.log(newVal)
+    }
   },
   methods: {
     handleScroll() {
@@ -99,6 +107,9 @@ export default {
     clickOutside() {
       this.isNavbarOpen = false;
     },
+    setNom(nom){
+      this.nom = nom
+    }
   },
   directives: {
     scroll: {
@@ -143,4 +154,5 @@ export default {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
 </style>

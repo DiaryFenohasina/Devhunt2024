@@ -84,7 +84,7 @@
                 <input class="form-control form-control-lg" id="formFileLg" @change="fileHandler" type="file" >
               </div>
               <div class="d-flex align-items-center justify-content-end">
-                <router-link to="/Sign/In"><span class="mx-2 mx-sm-3 has-acc">déja inscrit ?</span></router-link>
+                <router-link to="/"><span class="mx-2 mx-sm-3 has-acc">déja inscrit ?</span></router-link>
                 <button type="submit" class="btn btn-primary" :disabled="isDisable">Inscription</button>
               </div>
             </form>
