@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt/bcrypt')
 const model = require('../models')
 const fs = require('fs')
 const { generateToken } = require('../utils/generateToken')
+const { sequelize } = require('../models')
 
 exports.register = async (req, res) => {
    const { name, firstname, email, password, imageProfile, contact, level, background } = req.body
@@ -227,17 +228,29 @@ exports.getMentors = async (req, res) => {
    }
 }
 exports.switchToMentor = async (req, res) => {
+   const { skills } = req.body.skills
+   let transaction;
    try {
-      const user = await model.User.findByPk({
-         where: {
-            isMentor: true,
-            id: req.user.id
-         },
+      const mentor = await model.User.findByPk({
+         where: {id: req.user.id},
          attributes: { exclude: ['password'] }
       })
-      if(!user) return res.status(404).json({ message: "User not found or you already a mentor"})
-      return res.status(200).json(user)
+      if(!mentor) return res.status(404).json({ message: "User not found or you already a mentor"})
+      if(mentor.isMentor){
+         transaction = await sequelize.transaction()
+         const findsOrCreateSkills = skills.mao(async (skillname) => {
+            const [skill] = await model.Skill.findOrCreate({
+               where: {name: skillname}
+            }, { transaction })
+            return skill
+         })
+         const createdSkills = await Promise.all(findsOrCreateSkills)
+         await mentor.addSkills(createdSkills)
+      }
+      transaction.commit()
+      return res.status(200).json(mentor)
    } catch (error) {
+      transaction.rollback()
       return res.status(500).json({ message: "Internal server error" })
    }
 }

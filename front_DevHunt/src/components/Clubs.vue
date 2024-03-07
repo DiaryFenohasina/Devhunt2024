@@ -3,6 +3,7 @@
     <div class="container">
       <div class="section-title text-center">
         <h2 class=" text-center ">Association et Clubs</h2>
+<<<<<<< HEAD
         <p class="text-center">dsljfhsdlsfjsdlkfj   </p>
       </div>
       <div class="d-flex justify-content-center mb-2 ">
@@ -15,6 +16,12 @@
       </div>
       <div class="row">
         <div v-for="(club,index) in data[Show] " :key="index" class="c-type col-lg-3 col-md-4 col-sm-6 mb-4">
+=======
+        <p class="text-center">Rejoignez notre famille engagée au sein de l'ENI pour partager des passions communes et créer des liens durables</p>
+      </div>
+      <div class="row">
+        <div v-for="(club,index) in Clubs " :key="index" class="c-type col-lg-3 col-md-4 col-sm-6 mb-4">
+>>>>>>> 704c5947495c45d1411cb0bbc7643940a15f1849
           <div class="card match-height" style="height: 321.4px;">
             <div class="card-body">
               <router-link :to="`/Services/${index}`">
@@ -31,13 +38,12 @@
 </template>
 <script>
 import Card from '@/components/Card.vue'
-import {Clubs, Etudes, Sports, Autres} from '@/data'
+import {Clubs} from '@/data'
 
 export default {
   data(){
     return{
-      data: [Clubs, Etudes, Sports, Autres],
-      Show: 0
+      Clubs
 
     }
   },
@@ -45,11 +51,7 @@ export default {
     Card,
   },
   methods:{
-    selectClubs(x)
-    {
-      console.log('clicked')
-      this.Show = x
-    }
+    
   }
   
 }

@@ -6,7 +6,8 @@ router.post('/register', register)
 router.post('/login', login)
 router.post('/logout', logout)
 
-router.get('/mentor', authenticate, getMentors)
+router.get('/mentors', authenticate, getMentors)
+router.get('/switchToMentor', authenticate, switchToMentor)
 
 router.route("/me")
    .get(authenticate, getCurrentUserProfile)
