@@ -1,116 +1,182 @@
 <template>
-    <div class="section pb-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5" v-for="utilisateur in user" v-bind:key="utilisateur.id">
-                    <div class="card match-height" style="height: 321.4px;">
-                      <div class="card-body">
-                        <div class="d-flex gap-5">
-                            <img src="../assets/images/card.png" class="avatar" alt="">
-                            <div class="text">
-                                <p class="card-title h8">{{ utilisateur.name }}</p>
-                                <p class="card-title h8">{{ utilisateur.firstname }}</p>
-                                <p class="card-title h8">L2 GB</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="red" :class="heart" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-5 mt-3">
-                            <div class="text col-lg-7 ">
-                                <p class="card-text mt-1">Dev ReactJs</p>
-                                <p class="card-text mt-1">Dev ReactJs</p>
-                                <p class="card-text mt-1">Dev ReactJs</p>   
-                            </div>
-                            <div class="contact mt-5 m-auto">
-                                <i class="card-icon mb-4 ti-comments" ></i>
-                            </div>
-                        </div>   
-                        <slot/>
-                      </div>
-                    </div>
+  <div class="section pb-0">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5"
+          v-for="utilisateur in user"
+          v-bind:key="utilisateur.id">
+          <div class="card match-height" style="height: 321.4px">
+            <div class="card-body">
+              <div class="d-flex gap-5">
+                <img src="../assets/images/card.png" class="avatar" alt="" />
+                <div class="text">
+                  <p class="card-text mt-1">tay</p>
+                  <p class="card-text mt-1">tay</p>
+                  <p class="card-text mt-1">tay</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    fill="red"
+                    :class="heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                    />
+                  </svg>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
-                    <div class="card match-height" style="height: 321.4px;">
-                      <div class="card-body">
-                        <div class="d-flex gap-5">
-                            <img src="../assets/images/card.png" class="avatar" alt="">
-                            <div class="text">
-                                <p class="card-title h8">RICHARTS</p>
-                                <p class="card-title h8">Diary Fenohasina</p>
-                                <p class="card-title h8">L2 GB</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="red" :class="heart" viewBox="0 0 16 16">
-                                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-5 mt-3">
-                            <div class="text col-lg-7 ">
-                                <p class="card-text mt-1">Dev ReactJs</p>
-                                <p class="card-text mt-1">Dev ReactJs</p>
-                                <p class="card-text mt-1">Dev ReactJs</p>         
-                            </div>
-                            <div class=" contact mt-5 m-auto">
-                                <i class="card-icon mb-4 ti-comments" ></i>
-                            </div>
-                        </div>   
-                        <slot/>
-                      </div>
-                    </div>
+              </div>
+              <div class="d-flex gap-5 mt-3">
+                <div class="text col-lg-7">
+                  <p class="card-title h8">tay tay tay tay</p>
+                  <p class="card-text mt-1">
+                    tay
+                  </p>
                 </div>
+                <div class="contact mt-5 m-auto" @click="getCHat(utilisateur.id)">
+                  <i class="card-icon mb-4 ti-comments"></i>
+                </div>
+              </div>
+              <slot />
             </div>
+          </div>
         </div>
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
+          <div class="card match-height" style="height: 321.4px">
+            <div class="card-body">
+              <div class="d-flex gap-5">
+                <img src="../assets/images/card.png" class="avatar" alt="" />
+                <div class="text">
+                  <p class="card-text mt-1">Dev ReactJs</p>
+                  <p class="card-text mt-1">Dev ReactJs</p>
+                  <p class="card-text mt-1 mb-2">Dev ReactJs</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    fill="red"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="d-flex gap-5 mt-3">
+                <div class="text col-lg-7">
+                  <p class="card-title h8">Diary Fenohasina L2 GB</p>
+                  <p class="card-text mt-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                </div>
+                <div class="contact mt-5 m-auto">
+                  <i class="card-icon mb-4 ti-comments"></i>
+                </div>
+              </div>
+              <slot />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
+          <div class="card match-height" style="height: 321.4px">
+            <div class="card-body">
+              <div class="d-flex gap-5">
+                <img src="../assets/images/card.png" class="avatar" alt="" />
+                <div class="text">
+                  <p class="card-title h8">RICHARTS</p>
+                  <p class="card-title h8">Diary Fenohasina</p>
+                  <p class="card-title h8">L2 GB</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    fill="red"
+                    :class="heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="d-flex gap-5 mt-3">
+                <div class="text col-lg-7">
+                  <p class="card-text mt-1">Dev ReactJs</p>
+                  <p class="card-text mt-1">Dev ReactJs</p>
+                  <p class="card-text mt-1">Dev ReactJs</p>
+                </div>
+                <div class="contact mt-5 m-auto">
+                  <i class="card-icon mb-4 ti-comments"></i>
+                </div>
+              </div>
+              <slot />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import { backServer } from '@/config/axiosConfig';
+import { backServer } from "@/config/axiosConfig";
 
-export default{
-    data(){
-        return{
-            heart: '',
-            user : {}
-        }
+export default {
+  data() {
+    return {
+      heart: "",
+      user: {},
+    };
+  },
+  components: {},
+  mounted() {
+    this.heartcolors();
+  },
+  methods: {
+    async heartcolors() {
+      try {
+        const response = await backServer.post('');
+        if (response.data === true) this.heart = "bi bi-heart";
+        else this.heart = "bi bi-heart-fill";
+      } catch (error) {
+        console.log(error);
+      }
     },
-    components:{
-        
+    async getMentor() {
+      try {
+        const response = await backServer.get("");
+        this.user = [...response.data];
+        console.log("succes");
+      } catch (error) {
+        console.log(error);
+      }
     },
-    mounted (){
-        this.heartcolors()
-    },
-    methods : {
-        async heartcolors(){
-            try {
-                const response = await backServer.post('');
-                if(response.data === true)
-                    this.heart = 'bi bi-heart'
-                else 
-                    this.heart = 'bi bi-heart-fill'
-
-            } catch (error) {
-                console.log(error)   
-            }
-        },
-        async getMentor(){
-            try {
-                const response = await backServer.get('')
-                this.user = [...response.data]
-                console.log('succes')
-            } catch (error) {
-                console.log(error)
-            }
+    async getCHat(id){
+        try {
+            const path = ''
+            const params = {data : id}
+            this.$router.push({name : path, params : params})
+            console.log('succes')
+        } catch (error) {
+            console.log(error)
         }
     }
-}
+  },
+};
 </script>
 
 <style scoped>
-.avatar{
-    border-radius: 5%;
-    height: 140px;
-    object-fit: cover;
-    vertical-align: middle;
+.avatar {
+  border-radius: 5%;
+  height: 140px;
+  object-fit: cover;
+  vertical-align: middle;
 }
-
 </style>

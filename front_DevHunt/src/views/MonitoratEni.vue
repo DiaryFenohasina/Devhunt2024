@@ -6,48 +6,48 @@
         <img src="../assets/images/jeune1.jpeg" alt="" class="image mb-5" />
       </div>
       <div class="txt col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
-        <h2 class="section-title  mt-4">Les Mentors</h2>
+        <h2 class="section-title mt-4">Les Mentors</h2>
       </div>
-      <div class="row ">
+      <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
-              <div class="card match-height" style="height: 321.4px">
-                <div class="card-body">
-                  <div class="d-flex gap-5">
-                    <img src="../assets/images/card.png" class="avatar" alt="" />
-                    <div class="text">
-                      <p class="card-text mt-1">Dev ReactJs</p>
-                      <p class="card-text mt-1">Dev ReactJs</p>
-                      <p class="card-text mt-1 mb-2">Dev ReactJs</p>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="23"
-                        height="23"
-                        fill="red"
-                        class="bi bi-heart-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="d-flex gap-5 mt-3">
-                    <div class="text col-lg-7">
-                      <p class="card-title h8">Diary Fenohasina L2 GB</p>
-                      <p class="card-text mt-1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                      </p>
-                    </div>
-                    <div class="contact mt-5 m-auto">
-                      <i class="card-icon mb-4 ti-comments"></i>
-                    </div>
-                  </div>
-                  <slot />
+          <div class="card match-height" style="height: 321.4px">
+            <div class="card-body">
+              <div class="d-flex gap-5">
+                <img src="../assets/images/card.png" class="avatar" alt="" />
+                <div class="text">
+                  <p class="card-text mt-1">Dev ReactJs</p>
+                  <p class="card-text mt-1">Dev ReactJs</p>
+                  <p class="card-text mt-1 mb-2">Dev ReactJs</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="23"
+                    fill="red"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                    />
+                  </svg>
                 </div>
               </div>
+              <div class="d-flex gap-5 mt-3">
+                <div class="text col-lg-7">
+                  <p class="card-title h8">Diary Fenohasina L2 GB</p>
+                  <p class="card-text mt-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  </p>
+                </div>
+                <div class="contact mt-5 m-auto">
+                  <i class="card-icon mb-4 ti-comments"></i>
+                </div>
+              </div>
+              <slot />
             </div>
+          </div>
+        </div>
         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-2 col-xl-4 mb-5">
           <div class="card match-height" style="height: 321.4px">
             <div class="card-body">
