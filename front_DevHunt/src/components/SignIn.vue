@@ -23,10 +23,7 @@
               <label for="email">Email</label>
             </div>
             <div class="form-floating mb-3">
-              <input
-                type="password"
-                class="form-control"
-                :class="isValid['password'] ? 'is-valid' : 'not-valid'"
+              <input type="password" class="form-control" :class="isValid['password'] ? 'is-valid' : 'not-valid'"
                 id="password"
                 required
                 placeholder=""
@@ -65,7 +62,11 @@ export default {
   },
   methods: {
     login() {
+<<<<<<< HEAD
       backServer.post("/login", this.user)
+=======
+      backServer.post("/api/user/login", this.user)
+>>>>>>> bc540779e8a66268117f39f7a430c697de546567
         .then((res) => {
           if (res.data.message === "connected") {
             localStorage.setItem("token", res.data.access_token);

@@ -7,7 +7,13 @@ import Authentication from '@/layout/Authentication.vue'
 import SignIn from '@/components/SignIn'
 import SignUp from '@/components/SignUp'
 import Chat from '@/views/Chat'
-import Forum from '@/views/Forum'
+import MonitoratEni from '@/views/MonitoratEni.vue'
+import Acceuille from '@/views/Acceuille.vue'
+import TrouverMontor from '@/views/TrouverMontor.vue'
+import MappingView from '@/views/MappingView.vue'
+import Discussion from '@/views/Discussion'
+import DevenirMentor from '@/views/DevenirMentor.vue'
+
 
 Vue.use(VueRouter)
 
@@ -33,6 +39,13 @@ const routes = [
     name: 'services',
     component: Services
   },  
+  //ajouter tojo
+  {
+    path: '/Aceuille',
+    name: 'aceuille',
+    component: Acceuille
+  },  
+
   {
     path: '/Sign',
     name: 'Sign',
@@ -49,6 +62,31 @@ const routes = [
         component: SignUp
       }
     ]
+  },
+  {
+    path: '/monitorat',
+    name: 'guide',
+    component: MonitoratEni
+  },
+  {
+    path: '/discussion',
+    name: 'discussion',
+    component: Discussion
+  },
+  {
+    path: '/trouver',
+    name: 'trouver',
+    component: TrouverMontor
+  },
+  {
+    path: '/mapp',
+    name: 'mapp',
+    component: MappingView
+  },
+  {
+    path: '/devenir_mentor',
+    name: 'devenir_mentor',
+    component: DevenirMentor
   },
  
 ]

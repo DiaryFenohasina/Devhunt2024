@@ -3,7 +3,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand d-1" href="#">DEMO</a>
+          <a class="navbar-brand d-1" href="#">Guide ENI</a>
           <button
             class="navbar-toggler border-0 "
             type="button"
@@ -17,7 +17,7 @@
           <div class="collapse navbar-collapse text-center"  :class="{ 'show': isNavbarOpen }" id="navbarScroll">
             <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" >
               <li class="nav-item">
-                <router-link to="/"><span class="nav-link pb-2" :class="getName == 'home' && 'nav-active'">Home</span></router-link>
+                <router-link to="/"><span class="nav-link pb-2" :class="getName == 'home' && 'nav-active'">Guide</span></router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/Services/0"><span class="nav-link" :class="getName == 'services' && 'nav-active'">Services</span></router-link>
