@@ -107,12 +107,8 @@
           sign: this.$route.path,
           errorMsg:'',
           parcours:'',
-<<<<<<< HEAD
-          niveau:''
-=======
           niveau:'',
 
->>>>>>> bc540779e8a66268117f39f7a430c697de546567
       }
     },
     methods: {
@@ -173,23 +169,6 @@
         }
         reader.readAsDataURL(file)
       },
-<<<<<<< HEAD
-      // register(){
-      //   backServer.post('/register',this.user)
-      //     .then(res => {
-      //       if(res.data.message === 'success')
-      //       {
-      //         this.$router.push({path: '/Sign/In', query: {email: res.data.email}}) 
-      //       }
-      //       console.log('tafiditra')
-      //     }).catch((err) => {
-      //         this.errorMsg = err.response.data.message
-      //         this.isValid.email = false
-      //         setTimeout(this.clearForm,3000)
-      //     })
-      // },
-=======
->>>>>>> bc540779e8a66268117f39f7a430c697de546567
       clearForm(){
         this.errorMsg =''
         this.isDisable = true
@@ -198,19 +177,6 @@
       },
 
       async createUser(){
-<<<<<<< HEAD
-        const formData = new FormData();
-        formData.append('name', this.user.name)
-        formData.append('first_name', this.user.first_name)
-        formData.append('niveau', this.user.niveau)
-        formData.append('parcours', this.user.parcours)
-        formData.append('email', this.user.email)
-        formData.append('password', this.user.password)
-        formData.append('confirmPassword', this.user.confirmPassword)
-
-        try {
-          const response = await backServer.post('insert_user', this.formData)
-=======
         // const formData = new FormData();
         // formData.append('name', this.user.name)
         // formData.append('firstname', this.user.first_name)
@@ -223,7 +189,6 @@
 
         try {
           const response = await backServer.post('/api/user/register', this.user)
->>>>>>> bc540779e8a66268117f39f7a430c697de546567
           console.log('Succes')
         } catch (error) {
           console.log(error)
